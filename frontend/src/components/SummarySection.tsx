@@ -34,7 +34,7 @@ export default function SummarySection({ summary, settlements, participants }: P
               <YAxis hide />
               <Tooltip
                 contentStyle={{ fontSize: 12, borderRadius: 8, border: "1px solid #e4e4e7", boxShadow: "none" }}
-                formatter={(v: number) => [`₹${v.toFixed(2)}`]}
+                formatter={(value: unknown) => [`₹${Number(value).toFixed(2)}`]}
               />
               <Bar dataKey="Paid" fill="#18181b" radius={[4, 4, 0, 0]} />
               <Bar dataKey="Share" fill="#d4d4d8" radius={[4, 4, 0, 0]} />

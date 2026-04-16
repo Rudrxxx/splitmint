@@ -121,7 +121,7 @@ export default function MintSensePanel({ groupId, participants, onClose, onExpen
           </div>
 
           <div className="flex-1 overflow-y-auto px-5 py-4 flex flex-col gap-4">
-            <p className="text-xs text-zinc-400">Describe an expense in plain language and I'll structure it for you.</p>
+            <p className="text-xs text-zinc-400">Describe an expense in plain language and I&apos;ll structure it for you.</p>
 
             {error && <p className="text-xs text-red-500">{error}</p>}
 
